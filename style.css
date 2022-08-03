@@ -1,9 +1,11 @@
 body{
     background-color: #8BC6EC;
     background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
-        height: auto;
-        background-attachment: fixed;
-        background-size: cover;
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif !important;
+
 
 }
 .container{
@@ -15,11 +17,31 @@ body{
 }
 
 .buttons{
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .buttons>button{
     width: 100px;
     height: 50px;
-    box-shadow: 0 0 0.2em black;
+    box-shadow: 0 0 0.1em black;
+}
+#result{
+    font-weight:900;
+    font-size: 36px;
+}
+
+.score{
+    text-align: center;
+    font-size: 26px;
+}
+
+.score>p{
+    display: inline;
+}
+
+.score>p:nth-child(-2n + 4) {
+    margin-right: 100px;
+}
+.score>p:nth-child(-2n + 6) {
+    color:white;
 }
