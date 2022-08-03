@@ -36,7 +36,7 @@ body{
 }
 
 .score>p{
-    display: inline;
+    display:inline-block;
 }
 
 .score>p:nth-child(-2n + 4) {
@@ -44,4 +44,29 @@ body{
 }
 .score>p:nth-child(-2n + 6) {
     color:white;
+}
+
+.logo{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .score>p{
+        display:block;
+        margin-bottom: 4px;
+    }
+    .score>p:nth-child(-2n + 4) {
+        margin-right: 0px;
+    }
+
+    #result{
+        font-size: 20px;
+    }
+    .score{    
+    font-size: 16px;
+}
 }
